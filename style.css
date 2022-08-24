@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --very-dark-blue-main-bg: hsl(233, 47%, 7%);
+    --dark-desaturated-blue-card-bg: hsl(244, 38%, 16%);
+    --soft-violet-accent: hsl(277, 64%, 61%);
+    --white-main-heading-stats: hsl(0, 0%, 100%);
+    --slightly-transparent-white-main-p: hsla(0, 0%, 100%, 0.5);
+    --slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;    font-size: 15px;
+    background: var(--very-dark-blue-main-bg);
+    height: 98vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 465.485px;
+    background:var(--dark-desaturated-blue-card-bg);
+    border-radius: 10px 0 0 10px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    margin-left: 60px;
+}
+
+.pic{
+    position: relative;
+    background: var(--soft-violet-accent);
+    width: 563.594px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    
+}
+img{
+    mix-blend-mode:multiply ;
+    width: 100%;
+    
+}
+
+#purple{
+    position: absolute;
+    width: 563.594px;
+    height: 465.484px;
+    background: var(--soft-violet-accent);
+    border-radius: 0 10px 10px 0; 
+    right:36px;   
+    z-index: 1;
+    opacity: 0.2;
+}
+
+h1{
+    color: var(--white-main-heading-stats);
+    font-size: 33.6px;
+    font-weight: 900;
+}
+
+h1>strong{
+    color: var(--soft-violet-accent);
+}
+
+#main-p{
+    line-height:25px;
+}
+
+p{
+    color: var(--slightly-transparent-white-main-p);  
+}
+
+#stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    font-size: 12px;
+    
+}
+
+#stats>p{
+    color: var(--slightly-transparent-white-main-p);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+#stats>p>span{
+    color: var(--white-main-heading-stats);
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom:-10px;
+    font-weight: 900;
+    display: block;
+    text-transform: none;
+}
+
+
+.attribution {
+    color: var(--slightly-transparent-white-main-p);
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1115px) {
+    body{
+        background-color: var(--very-dark-blue-main-bg);
+    }
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+        height: 510px;
+        background:var(--dark-desaturated-blue-card-bg);
+        border-radius: 0 0 10px 10px;
+    }
+
+    #content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: -10px;
+        margin-right: 35px;
+        margin-left: 35px;
+        text-align: center;
+    }
+    
+    img{
+        position: relative;
+        width: 328.297px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    img::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: var(--soft-violet-accent);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #stats{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color:var(--white-main-heading-stats);
+        margin-top: 2px;
+    }
+    h1{
+        font-size: 1.8rem;
+        margin-bottom:0px ;
+    }
+
+    #main-p{
+        line-height:25px;
+        width: 275px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
