@@ -114,6 +114,7 @@ p{
     color: var(--slightly-transparent-white-main-p);
     font-size: 11px; 
     text-align: center; 
+margin-top:10px;
 }
 
 .attribution a { 
